@@ -20,7 +20,7 @@ export default function Convector() {
     }
     
     if (colorHex.length >= 7 && !colorHex.match(/#[a-f0-9]{6}\b/gi)) {
-      setColors(prev => ({...prev, rgb: '', error: true}));
+      setColors(prev => ({...prev, hex: '#e50039', rgb: '', error: true}));
     }
   }
 
